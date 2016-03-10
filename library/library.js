@@ -1,9 +1,11 @@
 /*
-<script type="text/javascript">document.write('<script src="https://cdn.rawgit.com/esphas/RM6R/master/library/library.js"><\/script>');</script>
+<script type="text/javascript">
+document.write('<script src="https://cdn.rawgit.com/esphas/RM6R/master/library/library.js"><\/script>');
+<script type="text/javascript">document.write('<script src=""><\/script>');</script>
 <script type="text/javascript">EspLibraryFloor(2);</script>
 */
 
-if (jsyaml == void 0) {
+if ('undefined' == typeof yaml) {
 
 document.write('<script src="https://cdn.bootcss.com/js-yaml/3.5.3/js-yaml.min.js"><\/script>');
 
