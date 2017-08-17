@@ -1,2 +1,7 @@
 
 tmp
+
+library/_site
+library/.sass-cache
+library/floor
+library/auth.yml

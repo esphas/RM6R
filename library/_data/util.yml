@@ -1,0 +1,28 @@
+
+- name: RMMV多语言修复补丁
+  url: http://rm.66rpg.com/thread-384658-1-1.html
+  author: yangff
+  date: 2015-10-26
+  intro: "可以通俗的理解为繁中汉化包"
+  tag: 工具一览
+
+- name: RMMV简中汉化
+  url: http://rm.66rpg.com/thread-384731-1-1.html
+  author: trentswd
+  date: 2015-10-27
+  intro: "依赖于上面的RMMV多语言修复补丁"
+  tag: 工具一览
+
+- name: MV工程体积优化工具
+  url: http://rm.66rpg.com/thread-385878-1-1.html
+  author: (搬运)tseyik
+  date: 2015-11-19
+  intro: "未实证过，但从作者以及帖子上看比较靠谱"
+  tag: 工具一览
+
+- name: "OS X/Steam 多开 RMMV"
+  url: http://rm.66rpg.com/forum.php?mod=viewthread&tid=387151&page=1#pid2653125
+  author: orzFly
+  date: 2015-12-14
+  intro: "Mac 上 Steam 版本的 RMMV 默认是不可以双开多开的, 但是用了囧叔的这个东西之后.. 具体内容请看帖子内容"
+  tag: 工具一览

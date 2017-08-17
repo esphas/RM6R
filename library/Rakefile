@@ -1,0 +1,87 @@
+
+require 'pp'
+
+require 'fileutils'
+require 'yaml'
+require 'net/http'
+
+task :default => :test_post
+
+desc 'push updates'
+task :push do
+  sh 'jekyll', 'clean'
+  contents = YAML.load File.read '_data/contents.yml'
+  fid = contents['fid']
+  tid = contents['tid']
+  pid = contents['pid']
+  typeid = contents['typeid']
+  list = contents['list']
+  FileUtils.rm_rf 'floor'
+  FileUtils.mkdir 'floor'
+  list.each_with_index do |info, index|
+    open "floor/#{info['file']}", 'w' do |f|
+      f.write <<~CONTENT
+        ---\n---
+        <h2>#{info['name']}</h2>
+        {% include mvlist.html list = site.data.#{info['file']} %}
+      CONTENT
+    end
+  end
+  sh 'jekyll', 'build', '-d', '_site'
+  css = File.read '_site/css/main.css'
+  contents = File.read '_site/index.html'
+  contents = "<style>#{css}</style>#{contents}"
+  edit_post fid, tid, pid, contents, nil, typeid, {'htmlon' => 1}
+  list.each_with_index do |info, index|
+    floor = File.read "_site/floor/#{info['file']}"
+    state = edit_post fid, tid, info['tpid'], floor, '', nil, {'htmlon' => 1}
+    puts "#{state} #{index+2}F: #{info['name']}"
+  end
+end
+
+desc 'test post'
+task :test_post do
+  text = '阿里巴巴与四十大盗'
+  edit_post 540, 396728, 2700597, text, nil, 1139
+  #edit_post 540, 396728, 2732588, text
+end
+
+def edit_post fid, tid, pid, message, subject = nil, typeid = nil, options = {}
+  thread = URI "http://rm.66rpg.com/forum.php?mod=post&action=edit&fid=#{fid}&tid=#{tid}&pid=#{pid}"
+  edit = URI 'http://rm.66rpg.com/forum.php?mod=post&action=edit&extra=&editsubmit=yes'
+  cookie = get_cookie
+  Net::HTTP.start edit.host, edit.port do |http|
+    get = Net::HTTP::Get.new thread
+    get['Cookie'] = cookie
+    getr = http.request get
+    return false if getr.code != '200'
+    getr.body.match /id="formhash".+?value="(.+?)"/
+    formhash = $1
+    if subject.nil?
+      getr.body.match /id="subject".+?value="(.*?)"/
+      subject = $1.force_encoding 'utf-8'
+    end
+    post = Net::HTTP::Post.new edit
+    data = {
+      'fid' => fid,
+      'tid' => tid,
+      'pid' => pid,
+      'typeid' => typeid,
+      'subject' => subject,
+      'formhash' => formhash,
+      'message' => message
+    }
+    data.merge! options
+    post.set_form_data data
+    post['Cookie'] = cookie
+    postr = http.request post
+    return true if postr.code == '301'
+  end
+end
+
+def get_cookie
+  cookie = YAML.load File.read 'auth.yml'
+  cookie.map do |(key, value)|
+    "#{key}=#{value}"
+  end.join '; '
+end

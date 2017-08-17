@@ -1,0 +1,55 @@
+
+- name: 姫HimeWorks
+  url: http://himeworks.com/
+  author: Hime
+  date: 2015-11-28
+  intro: "脚本站，英文，无需科学上网"
+  tag: 综合站点
+
+- name: "Galv's Scripts"
+  url: http://galvs-scripts.com/
+  author: Galv
+  date: 2015-12-03
+  intro: "脚本站，英文，无需科学上网"
+  tag: 综合站点
+
+- name: yanfly.moe
+  url: http://galvs-scripts.com/
+  author: Yanfly
+  date: 2015-12-03
+  intro: "脚本站，英文，如果下载脚本时选择Mirror则无需科学上网"
+  tag: 综合站点
+
+- name: "Atelier RGSS"
+  url: https://atelierrgss.wordpress.com/
+  author: Atelier
+  date: 2015-12-03
+  intro: "脚本站，英文，需科学上网"
+  tag: 综合站点
+
+- name: "Mundo RPG Maker"
+  url: http://www.mundorpgmaker.com.br/
+  date: 2015-12-03
+  intro: "论坛|门户，葡萄牙语，无需科学上网"
+  tag: 综合站点
+
+- name: "鼠标系统加强"
+  url: http://forums.rpgmakerweb.com/index.php?/topic/46511-mouse-system-ex/
+  author: Galenmereth
+  date: 2015-11-28
+  intro: "英文，无需科学上网，给鼠标光标加图片，添加了几种鼠标和事件的交互，允许鼠标经过按钮时激活等"
+  tag: 外站脚本
+
+- name: "地图图标按钮"
+  url: http://forums.rpgmakerweb.com/index.php?/topic/46944-dmv-map-buttons/
+  author: "■ ᴆᴀřᴋ ᴆᴈᴋᴉᴦᴀ ■"
+  date: 2015-11-28
+  intro: "英文，无需科学上网，但是下载需要，在地图上显示数个图标按钮（可自定义），默认是用于类似RPG网游风格的菜单呼出键，也可以自定义为其他用处"
+  tag: 外站脚本
+
+- name: "像素移动"
+  url: http://forums.rpgmakerweb.com/index.php?/topic/49828-analog-move/
+  author: Sanshiro
+  date: 2015-11-28
+  intro: "英文，无需科学上网，但是下载需要，允许角色不按照地图图块为单位的移动"
+  tag: 外站脚本

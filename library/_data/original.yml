@@ -1,0 +1,140 @@
+
+- name: 无限图层显示系统
+  url: http://rm.66rpg.com/thread-384603-1-1.html
+  author: taroxd
+  date: 2015-10-25
+  intro: "地图遮罩扩展，应该是可以添加一些光效、雾、杂物等等遮罩效果 [ULDS]"
+  tag: 地图场景相关
+
+- name: 地图角色阴影
+  url: http://rm.66rpg.com/thread-385820-1-1.html
+  author: 过眼云烟
+  date: 2015-11-17
+  intro: "在地图上显示角色的影子，默认情况下角色包括主角和队列以及经过备注的事件"
+  tag: 地图场景相关
+
+- name: 仿碧轨地图血条
+  url: http://rm.66rpg.com/thread-386077-1-1.html
+  author: 过眼云烟
+  date: 2015-11-21
+  intro: "结合特定规格的素材，在地图上显示碧轨风格的角色血条"
+  tag: 地图场景相关
+
+- name: 墙壁通行度修正
+  url: http://rm.66rpg.com/thread-386148-1-1.html
+  author: andrewx
+  date: 2015-11-23
+  intro: "结合地形标记，配置了墙壁自动原件后方的通行度"
+  tag: 地图场景相关
+
+- name: 地图显示小地图
+  url: http://rm.66rpg.com/thread-386155-1-1.html
+  author: 过眼云烟
+  date: 2015-11-23
+  intro: "像素风格的小地图"
+  tag: 地图场景相关
+
+- name: 地图自定义HUD
+  url: http://rm.66rpg.com/thread-386374-1-1.html
+  author: 夏末渐离
+  date: 2015-12-01
+  intro: "通过一系列参数在插件管理器实现自定义地图HUD"
+  tag: 地图场景相关
+
+- name: 自动跳跃
+  url: http://rm.66rpg.com/thread-384533-1-1.html
+  author: feizhaodan
+  date: 2015-10-24
+  intro: "结合区域和地图备注，允许角色经过特定的某些不可通行的1个图块时自动跳过去"
+  tag: 事件/玩家相关
+
+- name: 仿空轨事件气球
+  url: http://rm.66rpg.com/thread-385900-1-1.html
+  author: 过眼云烟
+  date: 2015-11-20
+  intro: "结合事件备注，玩家走近特定事件时会在事件上显示气泡表情"
+  tag: 事件/玩家相关
+
+- name: 显示事件名称
+  url: http://rm.66rpg.com/thread-385850-1-1.html
+  author: dongdongdjh
+  date: 2015-11-18
+  intro: "结合事件备注，在地图的事件头顶显示事件的名称"
+  tag: 事件/玩家相关
+
+- name: 行走图动画拓展
+  url: http://rm.66rpg.com/thread-386342-1-1.html
+  author: VIPArcher
+  date: 2015-11-30
+  intro: "可用于八方向、奔跑、待机、多帧等方面"
+  tag: 事件/玩家相关
+
+- name: 玩家移动脚步声
+  url: http://rm.66rpg.com/thread-386382-1-1.html
+  author: YamazakiRyusa
+  date: 2015-12-01
+  intro: "给玩家的移动添加了脚步声，可配合4F的像素移动（AnalogMove）使用"
+  tag: 事件/玩家相关
+
+- name: 敌人战斗位置自动排列
+  url: http://rm.66rpg.com/thread-386034-1-1.html
+  author: 过眼云烟
+  date: 2015-11-20
+  intro: "横板战斗中自动排列敌人的位置，免除了手动摆放的种种困扰"
+  tag: 战斗相关
+
+- name: 随机产生精英怪
+  url: http://rm.66rpg.com/thread-386412-1-1.html
+  author: dongdongdjh
+  date: 2015-12-02
+  intro: "遇敌时有一定几率使敌人作为精英怪出现，属性和掉落都有加成"
+  tag: 战斗相关
+
+- name: 任务系统·小优版
+  url: http://rm.66rpg.com/thread-386412-1-1.html
+  author: rpg-sheep
+  date: 2015-11-15
+  intro: "独立的任务系统，详情见发布贴内"
+  tag: 独立系统
+
+- name: 米酒的RMMV的小插♂件开荒
+  url: http://rm.66rpg.com/thread-384599-1-1.html
+  author: 千葉玖濑
+  date: 2015-10-25
+  intro: ""
+  tag: 脚本合集
+
+- name: 不存在的脚本陈列室
+  url: http://rm.66rpg.com/thread-384560-1-1.html
+  author: MonsterJohnCN
+  date: 2015-10-24
+  intro: "主楼是原创脚本的链接，回复中大部分为汉化脚本"
+  tag: 脚本合集
+
+- name: shitake的个人脚本发布帖
+  url: http://rm.66rpg.com/thread-386137-1-1.html
+  author: 墨凌羽
+  date: 2015-11-23
+  intro: ""
+  tag: 脚本合集
+
+- name: 自定义FPS
+  url: http://rm.66rpg.com/thread-384683-1-1.html
+  author: feizhaodan
+  date: 2015-10-26
+  intro: "该脚本同时可以用来修复在高刷新率显示器中的BUG"
+  tag: RMMV功能拓展
+
+- name: PHE™无处不在的插件帮助
+  url: http://rm.66rpg.com/thread-384740-1-1.html
+  author: orzFly
+  date: 2015-10-28
+  intro: "在各种事件操作框和数据库备注框上添加可直接查阅插件说明的按钮，相当实用"
+  tag: RMMV功能拓展
+
+- name: 用CoffeeScript,Ruby,ES6等写插件
+  url: http://rm.66rpg.com/thread-384710-1-1.html
+  author: 晴兰
+  date: 2015-10-27
+  intro: "兰兰黑科技不需要任何解释"
+  tag: RMMV功能拓展

@@ -1,0 +1,17 @@
+<ul class="mvlib-list">
+{%- for item in include.list -%}
+  <li>
+  {% if item.node %}
+    <div class="mvlib-item">{{ item.name }}</div>
+    <div class="mvlib-node">{{ item.node }}</div>
+  {% else %}
+    <div class="mvlib-item">
+      <span class="mvlib-tag">{{ item.tag }}</span>
+      <span class="mvlib-name"><a href="{{ item.url }}">{{ item.name }}</a></span>
+      <span class="mvlib-meta">{{ item.author }} <time>{{ item.date }}</time></span>
+    </div>
+    <div class="mvlib-more">{{ item.intro }}</div>
+  {% endif %}
+  </li>
+{%- endfor -%}
+</ul>
